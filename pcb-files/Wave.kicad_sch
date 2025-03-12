@@ -12,22 +12,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -20.32 51.689 0)
+			(property "Reference" "U3"
+				(at 0 57.15 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 2.54 2.54)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "BT40F"
-				(at -20.32 -76.2 0)
+				(at 0 53.34 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "BT40F:XCVR_BT40F"
@@ -1294,6 +1292,26 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "BT40F_1_1"
+				(pin input line
+					(at -22.86 -52.07 0)
+					(length 2.54)
+					(name "wifi-pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -7889,6 +7907,16 @@
 	)
 	(wire
 		(pts
+			(xy 466.09 161.29) (xy 477.52 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3821bf4-7661-460f-9319-ecc7c76e5cca")
+	)
+	(wire
+		(pts
 			(xy 393.7 231.14) (xy 414.02 231.14)
 		)
 		(stroke
@@ -8086,6 +8114,16 @@
 			(type default)
 		)
 		(uuid "f727330f-9a64-415d-ba3c-fb1c7c733d48")
+	)
+	(wire
+		(pts
+			(xy 452.12 161.29) (xy 458.47 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc2bbbb3-5d18-4b5e-a3a0-07e5d65acb19")
 	)
 	(wire
 		(pts
@@ -9081,6 +9119,17 @@
 		(uuid "947b7bd8-d0d5-43e4-8b73-a7c014fb4207")
 	)
 	(label "3.3V"
+		(at 452.12 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b224a09-830e-4d10-a8d5-8e59be8f835b")
+	)
+	(label "3.3V"
 		(at 196.85 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9854,6 +9903,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 462.28 161.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0d841ec5-9ddd-4386-8b46-c9806a28475b")
+		(property "Reference" "R130"
+			(at 466.344 159.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 458.978 159.512 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 462.28 163.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 462.28 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 462.28 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99992c40-aa97-4f11-90fc-faabb4264fb5")
+		)
+		(pin "1"
+			(uuid "7bba2bae-1a76-4fe7-a3ac-62edb1435530")
+		)
+		(instances
+			(project "Wave"
+				(path "/4c47a525-f09f-4441-8def-34c50772c841"
+					(reference "R130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 317.5 290.83 180)
 		(unit 1)
@@ -10594,7 +10710,7 @@
 			(uuid "fd53ef59-58d0-413d-a4ca-0bee21e2f769")
 		)
 		(instances
-			(project ""
+			(project "Wave"
 				(path "/4c47a525-f09f-4441-8def-34c50772c841"
 					(reference "R7")
 					(unit 1)
@@ -12860,7 +12976,7 @@
 			(uuid "77757b67-171c-4807-ac68-09f8a8cceabc")
 		)
 		(instances
-			(project ""
+			(project "Wave"
 				(path "/4c47a525-f09f-4441-8def-34c50772c841"
 					(reference "U2")
 					(unit 1)
@@ -13264,7 +13380,7 @@
 			(uuid "7b39aed9-1293-451d-8eb4-ddb57346dfa3")
 		)
 		(instances
-			(project ""
+			(project "Wave"
 				(path "/4c47a525-f09f-4441-8def-34c50772c841"
 					(reference "R6")
 					(unit 1)
@@ -13532,7 +13648,7 @@
 			(uuid "b23f88af-4c95-4d08-994c-4380664b9d14")
 		)
 		(instances
-			(project ""
+			(project "Wave"
 				(path "/4c47a525-f09f-4441-8def-34c50772c841"
 					(reference "1.2V1")
 					(unit 1)
@@ -16334,6 +16450,9 @@
 		)
 		(pin "A2"
 			(uuid "60b3a658-7d37-45c2-8877-f48d1ac162d3")
+		)
+		(pin "17"
+			(uuid "e6929882-375a-42b3-907d-8fabbabe719e")
 		)
 		(instances
 			(project "Wave"
